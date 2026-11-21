@@ -46,14 +46,14 @@ export default function Hero() {
               <ArrowRight className="h-4 w-4" />
             </a>
 
-            <a
-              href={profile.resumePath}
-              download="Srinivasan_Cloud_DevOps_Resume.pdf"
-              className="inline-flex items-center gap-2 rounded-xl border border-[#22D3EE]/40 bg-[#102C50]/65 px-5 py-3.5 text-sm font-semibold text-white transition hover:border-[#22D3EE] hover:bg-[#102C50]"
-            >
-              <Download className="h-4 w-4 text-[#22D3EE]" />
-              Download Resume
-            </a>
+          <a
+  href={`${import.meta.env.BASE_URL}resume.pdf`}
+  download="Srinivasan_Cloud_DevOps_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Download Resume
+</a>
 
             <a
               href="#contact"
