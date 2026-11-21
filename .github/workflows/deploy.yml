@@ -1,5 +1,5 @@
 
-name: Deploy Vite Portfolio to GitHub Pages
+name: Deploy Portfolio to GitHub Pages
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
       - name: Verify resume PDF
         run: |
           test -f dist/resume.pdf
-          echo "Resume PDF found in dist folder"
+          ls -lh dist/resume.pdf
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
