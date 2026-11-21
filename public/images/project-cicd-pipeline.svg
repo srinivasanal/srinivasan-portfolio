@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="800" y2="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071426"/><stop offset="100%" stop-color="#102C50"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g3)"/>
+  <g stroke="#22D3EE" stroke-opacity="0.08">
+    <path d="M0 90H800M0 180H800M0 270H800M0 360H800"/>
+    <path d="M133 0V450M266 0V450M400 0V450M533 0V450M666 0V450"/>
+  </g>
+  <text x="400" y="84" text-anchor="middle" fill="#22D3EE" font-family="Inter, sans-serif" font-size="14" font-weight="700" letter-spacing="2">AUTOMATED CI/CD PIPELINE</text>
+  <!-- Stage 1: Git -->
+  <rect x="55" y="155" width="145" height="145" rx="16" fill="#102C50" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="127" cy="205" r="24" fill="#071426" stroke="#22D3EE" stroke-width="2"/>
+  <text x="127" y="210" text-anchor="middle" fill="#22D3EE" font-family="Inter, sans-serif" font-size="13" font-weight="700">GIT</text>
+  <text x="127" y="256" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="15" font-weight="700">Commit</text>
+  <text x="127" y="276" text-anchor="middle" fill="#C2D4E8" font-family="Inter, sans-serif" font-size="11">Version Control</text>
+  <!-- Stage 2: GitHub -->
+  <rect x="235" y="155" width="145" height="145" rx="16" fill="#102C50" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="307" cy="205" r="24" fill="#071426" stroke="#22D3EE" stroke-width="2"/>
+  <text x="307" y="210" text-anchor="middle" fill="#22D3EE" font-family="Inter, sans-serif" font-size="12" font-weight="700">GH</text>
+  <text x="307" y="256" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="15" font-weight="700">GitHub</text>
+  <text x="307" y="276" text-anchor="middle" fill="#C2D4E8" font-family="Inter, sans-serif" font-size="11">Webhook Trigger</text>
+  <!-- Stage 3: Jenkins -->
+  <rect x="415" y="155" width="145" height="145" rx="16" fill="#102C50" stroke="#22D3EE" stroke-width="2.2"/>
+  <circle cx="487" cy="205" r="24" fill="#2563EB" fill-opacity="0.3" stroke="#22D3EE" stroke-width="2"/>
+  <text x="487" y="210" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" font-weight="700">CI</text>
+  <text x="487" y="256" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="15" font-weight="700">Jenkins</text>
+  <text x="487" y="276" text-anchor="middle" fill="#C2D4E8" font-family="Inter, sans-serif" font-size="11">Automated Build</text>
+  <!-- Stage 4: Deploy -->
+  <rect x="595" y="155" width="150" height="145" rx="16" fill="#0B1F3A" stroke="#22D3EE" stroke-width="2"/>
+  <circle cx="670" cy="205" r="24" fill="#22D3EE" fill-opacity="0.2" stroke="#22D3EE" stroke-width="2"/>
+  <text x="670" y="210" text-anchor="middle" fill="#22D3EE" font-family="Inter, sans-serif" font-size="12" font-weight="700">CD</text>
+  <text x="670" y="256" text-anchor="middle" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="15" font-weight="700">Deploy</text>
+  <text x="670" y="276" text-anchor="middle" fill="#C2D4E8" font-family="Inter, sans-serif" font-size="11">Live Release</text>
+  <!-- Connectors -->
+  <path d="M200 227H230M380 227H410M560 227H590" stroke="#22D3EE" stroke-width="3" stroke-linecap="round"/>
+  <rect x="175" y="340" width="450" height="36" rx="18" fill="#071426" stroke="#2563EB" stroke-opacity="0.6"/>
+  <text x="400" y="363" text-anchor="middle" fill="#C2D4E8" font-family="Inter, sans-serif" font-size="12">Build  •  Test  •  Package  •  Automated Deployment</text>
+</svg>
