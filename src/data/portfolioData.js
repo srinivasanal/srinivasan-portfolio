@@ -173,7 +173,7 @@ export const aiFeaturedProject = {
   title: 'AI-Based Freshness Detection for Fruits and Vegetables',
   badge: 'Featured Final-Year AI/ML Project',
   category: 'Computer Vision & Full-Stack ML',
-  image: `${import.meta.env.BASE_URL}images/project-ai-freshness.svg`,
+ image: `${import.meta.env.BASE_URL}images/project-ai-freshness.svg`,
   technologies: ['Python', 'PyTorch', 'CNN', 'MobileNetV2', 'FastAPI', 'React'],
   shortDescription:
     'Developed an image-based system to classify fruits and vegetables as fresh or rotten, estimate shelf life and display useful food information.',
