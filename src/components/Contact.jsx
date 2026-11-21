@@ -161,8 +161,8 @@ export default function Contact() {
               </a>
 
               <a
-                href={profile.resumePath}
-                download="Srinivasan_Cloud_DevOps_Resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
+download="Srinivasan_Cloud_DevOps_Resume.pdf"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-[#22D3EE]/35 bg-[#071426] px-4 py-3 text-sm font-semibold text-[#22D3EE] transition hover:bg-[#102C50]"
               >
                 <Download className="h-4 w-4" />
