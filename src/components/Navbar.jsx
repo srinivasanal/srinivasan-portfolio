@@ -53,7 +53,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href={profile.resumePath}
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             download="Srinivasan_Cloud_DevOps_Resume.pdf"
             className="ml-3 inline-flex items-center gap-1.5 rounded-lg border border-[#22D3EE]/40 bg-[#2563EB]/20 px-3.5 py-2 text-xs font-semibold text-white transition hover:bg-[#2563EB] hover:shadow-glow"
           >
