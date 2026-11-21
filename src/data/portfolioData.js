@@ -105,7 +105,7 @@ export const cloudProjects = [
     id: 'ec2-to-rds',
     title: 'EC2 to RDS Database Migration',
     category: 'Cloud Infrastructure & Migration',
-    image: '/images/project-rds-migration.svg',
+    image: `${import.meta.env.BASE_URL}images/project-rds-migration.svg`,
     technologies: ['Amazon EC2', 'Amazon RDS', 'AWS VPC', 'AWS DMS'],
     shortDescription:
       "Migrated the project database from EC2 to RDS and updated the application's database connection. Also performed database migration using AWS DMS.",
@@ -122,7 +122,7 @@ export const cloudProjects = [
     id: 'onprem-to-aws',
     title: 'On-Premises Project Migration to AWS',
     category: 'Cloud Migration',
-    image: '/images/project-onprem-aws.svg',
+    image: `${import.meta.env.BASE_URL}images/project-onprem-aws.svg`,
     technologies: ['Amazon EC2', 'AWS VPC', 'Nginx'],
     shortDescription:
       'Moved a locally hosted application to AWS and configured its cloud environment.',
@@ -138,7 +138,7 @@ export const cloudProjects = [
     id: 'cicd-pipeline',
     title: 'Cloud and DevOps Pipeline',
     category: 'CI/CD Automation',
-    image: '/images/project-cicd-pipeline.svg',
+    image: `${import.meta.env.BASE_URL}images/project-cicd-pipeline.svg`,
     technologies: ['Git', 'GitHub', 'Jenkins'],
     shortDescription:
       'Created a CI/CD pipeline to automate project build and deployment.',
@@ -154,7 +154,7 @@ export const cloudProjects = [
     id: 'three-tier-aws',
     title: 'Three-Tier AWS Deployment with Load Balancer',
     category: 'High-Availability Architecture',
-    image: '/images/project-three-tier.svg',
+    image: `${import.meta.env.BASE_URL}images/project-three-tier.svg`,
     technologies: ['Amazon EC2', 'Application Load Balancer', 'Amazon RDS', 'AWS VPC', 'Nginx'],
     shortDescription:
       'Deployed an application using separate web, application and database tiers, with a load balancer routing incoming traffic.',
@@ -173,7 +173,7 @@ export const aiFeaturedProject = {
   title: 'AI-Based Freshness Detection for Fruits and Vegetables',
   badge: 'Featured Final-Year AI/ML Project',
   category: 'Computer Vision & Full-Stack ML',
-  image: '/images/project-ai-freshness.svg',
+  image: `${import.meta.env.BASE_URL}images/project-ai-freshness.svg`,
   technologies: ['Python', 'PyTorch', 'CNN', 'MobileNetV2', 'FastAPI', 'React'],
   shortDescription:
     'Developed an image-based system to classify fruits and vegetables as fresh or rotten, estimate shelf life and display useful food information.',
