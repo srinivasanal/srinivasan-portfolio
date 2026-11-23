@@ -40,20 +40,20 @@ export default function Hero() {
           <div className="mt-9 flex flex-wrap items-center gap-3.5">
             <a
               href="#projects"
-              className="btn-glow inline-flex items-center gap-2 rounded-xl bg-[#2563EB] px-6 py-3.5 text-sm font-semibold text-white hover:bg-[#1D4ED8]"
+              className="btn-glow group inline-flex items-center gap-2 rounded-xl bg-[#2563EB] px-6 py-3.5 text-sm font-semibold text-white hover:bg-[#1D4ED8]"
             >
               Explore My Projects
-              <ArrowRight className="h-4 w-4" />
+              <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </a>
 
-          <a
-  href={`${import.meta.env.BASE_URL}resume.pdf`}
-  download="Srinivasan_Cloud_DevOps_Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Download Resume
-</a>
+            <a
+              href={profile.resumePath}
+              download="Srinivasan_Cloud_DevOps_Resume.pdf"
+              className="btn-download-glow group inline-flex items-center gap-2 rounded-xl px-6 py-3.5 text-sm font-semibold text-white"
+            >
+              <Download className="h-4 w-4 transition-transform duration-200 group-hover:translate-y-0.5" />
+              Download Resume
+            </a>
 
             <a
               href="#contact"
