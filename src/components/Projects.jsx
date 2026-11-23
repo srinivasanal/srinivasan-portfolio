@@ -31,7 +31,7 @@ function ProjectCard({ project, onOpen, index }) {
           src={project.image}
           alt={project.title}
           loading="lazy"
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+          className="h-full w-full object-contain transition duration-500 group-hover:scale-105"
         />
         <span className="absolute left-3 top-3 rounded-full border border-[#22D3EE]/35 bg-[#071426]/85 px-3 py-1 font-mono text-[11px] font-medium text-[#22D3EE] backdrop-blur-md">
           {project.category}
@@ -66,7 +66,6 @@ function ProjectCard({ project, onOpen, index }) {
             <Layers className="h-4 w-4" />
             View Project Details
           </button>
-
         </div>
       </div>
     </motion.article>
@@ -97,14 +96,12 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        {/* Primary 4 Cloud & DevOps Projects */}
         <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
           {cloudProjects.map((project, index) => (
             <ProjectCard key={project.id} project={project} index={index} onOpen={setSelected} />
           ))}
         </div>
 
-        {/* Separate Featured AI/ML Final-Year Project */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -118,12 +115,12 @@ export default function Projects() {
           </div>
 
           <div className="glass-card grid grid-cols-1 overflow-hidden rounded-2xl lg:grid-cols-12">
-            <div className="relative aspect-[16/9] border-b border-[#22D3EE]/15 bg-[#071426] lg:col-span-5 lg:aspect-auto lg:border-b-0 lg:border-r">
+            <div className="relative flex aspect-[16/9] items-center justify-center border-b border-[#22D3EE]/15 bg-[#071426] lg:col-span-5 lg:aspect-auto lg:border-b-0 lg:border-r">
               <img
                 src={aiFeaturedProject.image}
                 alt={aiFeaturedProject.title}
                 loading="lazy"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
             <div className="flex flex-col justify-between p-7 sm:p-8 lg:col-span-7">
@@ -154,14 +151,12 @@ export default function Projects() {
                   <Layers className="h-4 w-4" />
                   Inspect Project Details
                 </button>
-
               </div>
             </div>
           </div>
         </motion.div>
       </div>
 
-      {/* Project Detail Modal */}
       <AnimatePresence>
         {selected && (
           <motion.div
@@ -198,8 +193,12 @@ export default function Projects() {
                 </button>
               </div>
 
-              <div className="mt-5 overflow-hidden rounded-xl border border-[#22D3EE]/20 bg-[#071426]">
-                <img src={selected.image} alt={selected.title} className="h-56 w-full object-cover" />
+              <div className="mt-5 aspect-[16/9] w-full overflow-hidden rounded-xl border border-[#22D3EE]/20 bg-[#071426]">
+                <img
+                  src={selected.image}
+                  alt={selected.title}
+                  className="h-full w-full object-contain"
+                />
               </div>
 
               <p className="mt-5 text-sm leading-relaxed text-[#C2D4E8]">
@@ -230,8 +229,6 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-
-
             </motion.div>
           </motion.div>
         )}
